@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/notice"
+            android:icon="@drawable/notice"
+            android:title="NOTICE" />
+        <item
+            android:id="@+id/complain"
+            android:icon="@drawable/complaint"
+            android:title="COMPLAIN">
+            <menu >
+                <group android:id="@+id/group1"
+                    android:checkableBehavior="all">
+                    <item android:id="@+id/submenu1"
+                        android:title="RAISE-COMPLAIN" />
+                    <item android:id="@+id/submenu2"
+                        android:title="VIEW-COMPLAIN" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/maintenance"
+            android:icon="@drawable/maintenance"
+            android:title="MAINTENANCE">
+            <menu >
+                <group android:id="@+id/group2"
+                    android:checkableBehavior="all">
+                    <item android:id="@+id/sm1"
+                        android:title="ADD-MAINTENANCE" />
+                    <item android:id="@+id/sm2"
+                        android:title="VIEW-MAINTENANCE" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/rule"
+            android:icon="@drawable/rule"
+            android:title="RULE" />
+
+        <item
+            android:id="@+id/polling"
+            android:icon="@drawable/polling"
+            android:title="POLLING" />
+        <item
+            android:id="@+id/visitors"
+            android:icon="@drawable/visitor"
+            android:title="VISITORS" />
+        <item
+            android:id="@+id/facility"
+            android:icon="@drawable/facility"
+            android:title="FACILITY" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="LOG OUT" />
+    </group>
+</menu>
